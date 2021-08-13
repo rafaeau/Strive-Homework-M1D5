@@ -55,7 +55,17 @@ console.log("The result is:", crazyDiff(num1, num2))
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
 
-/* WRITE YOUR CODE HERE */
+function boundary (n){
+    if (n < 100 && 20 < n) {
+        return true;
+      } else if (n === 400) {
+        return true;
+      } else {
+        return false;
+      }
+}
+n = 19
+console.log(boundary(n))
 
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
