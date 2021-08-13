@@ -21,6 +21,18 @@ console.log("The area of the rectangle is:", area(l1, l2))
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
+function crazySum (integer1, integer2){
+    if (integer1 !== integer2){
+        return integer1+integer2
+    }
+    else (integer1 === integer2);{
+        return (integer1 + integer2) * 3
+    }
+}
+integer1 = 2
+integer2 = 2
+console.log("The result is:", crazySum(integer1, integer2))
+
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
