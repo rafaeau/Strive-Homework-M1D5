@@ -29,8 +29,8 @@ function crazySum (integer1, integer2){
         return (integer1 + integer2) * 3
     }
 }
-integer1 = 2
-integer2 = 2
+integer1 = 35
+integer2 = 35
 console.log("The result is:", crazySum(integer1, integer2))
 
 /* EXERCISE 3
@@ -91,7 +91,16 @@ Write a function "check3and7" which accepts a positive number and check if it is
 HINT: Module Operator
 */
 
-/* WRITE YOUR CODE HERE */
+function check3and7 (number){
+    if ((number % 3 === 0) && (number >= 0)){
+        return number + " is positive and multiple of 3."
+    }
+    else if ((number % 7 === 0) && (number >= 0)) {
+        return number + " is positive and multiple of 7."
+    }
+}
+number = 27
+console.log(check3and7 (number))
 
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
