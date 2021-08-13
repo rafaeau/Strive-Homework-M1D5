@@ -128,8 +128,10 @@ Write a function "cutString" to create a new string without the first and last c
 */
 
 function cutString(string3){
-    return string3
+    return string3.slice(1,-1);
 }
+let string3 = cutString("Strive School")
+console.log(string3)
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
