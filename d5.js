@@ -117,13 +117,19 @@ console.log(string)
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR CODE HERE */
+function toUpperCase(string2){
+    return string2.charAt(0).toUpperCase() + string2.slice(1) //One function uppercases the first letter, and the second slices the string and returns it starting from the second character
+}
+let string2 = toUpperCase("strive")
+console.log(string2)
 
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
-/* WRITE YOUR CODE HERE */
+function cutString(string3){
+    return string3
+}
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
